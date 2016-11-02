@@ -83,7 +83,11 @@
     "testPathIgnorePatterns": [
       "<rootDir>/(build|docs|node_modules)/"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/redux/**/*.js",
+      "src/util/**/*.js"
+    ]
   },
   "babel": {
     "presets": [
