@@ -14,20 +14,3 @@ describe('calcTotal function', () => {
     expect(calcTotal()).not.toBeTruthy();
   });
 });
-
-describe('formatAmount function', () =>  {
-  it('formats an amount', () => {
-    expect(formatAmount(10)).toBe('$ 10.00');
-  });
-  it('defaults to zero if the amount is not truthy', () => {
-    expect(formatAmount()).toBe('$ 0.00');
-  });
-  it('returns a string', () => {
-    expect(typeof formatAmount(10)).toBe('string');
-  });
-  it('should not mutate the passed argument', () => {
-    const amount = 10;
-    const result = formatAmount(amount);
-    expect(amount).toBe(10);
-  });
-});
