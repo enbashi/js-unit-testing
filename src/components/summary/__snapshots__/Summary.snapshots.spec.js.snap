@@ -1,11 +1,11 @@
-exports[`Summary Component renders Loading when no products are available yet 1`] = `
+exports[`Summary Snapshots renders Loading when no products are available yet 1`] = `
 <h1
   className="loading">
   Loading...
 </h1>
 `;
 
-exports[`Summary Component renders products 1`] = `
+exports[`Summary Snapshots renders products 1`] = `
 <div
   className="main-content">
   <form>
@@ -16,7 +16,7 @@ exports[`Summary Component renders products 1`] = `
       </h1>
     </div>
     <div
-      className="form-row">
+      className="form-row products">
       <label>
         <span>
           Product
@@ -39,7 +39,7 @@ exports[`Summary Component renders products 1`] = `
       </label>
     </div>
     <div
-      className="form-row">
+      className="form-row quantity">
       <label>
         <span>
           Quantity

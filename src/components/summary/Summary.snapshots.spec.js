@@ -1,10 +1,10 @@
 import React from 'react';
 import Summary from './Summary';
-import {shallow} from 'enzyme';
+import renderer from 'react-test-renderer';
 
-describe('Summary Component', () => {
+describe('Summary Snapshots', () => {
   it('renders Loading when no products are available yet', () => {
-    const component = shallow(
+    const component = renderer.create(
       <Summary
         products={[]}
         loadProducts={() => {}}
@@ -12,12 +12,12 @@ describe('Summary Component', () => {
         updateQuantity={() => {}}
       />
     );
-
-    expect(component.text()).toBe('Loading...');
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('renders products', () => {
-    const component = shallow(
+    const component = renderer.create(
       <Summary
         products={[
           {
@@ -36,14 +36,7 @@ describe('Summary Component', () => {
         updateQuantity={() => {}}
       />
     );
-    const productsEl = component.find('.products select option');
-    expect(productsEl.length).toBe(3);
-    const htmlContent = productsEl.map(el => el.html());
-    const expected = [
-        '<option>Select</option>',
-        '<option value="111">X1 Cound DVR - $ 10.00</option>',
-        '<option value="222">DTA Additional Outlet - $ 3.99</option>'
-      ];
-    expect(htmlContent).toEqual(expected);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

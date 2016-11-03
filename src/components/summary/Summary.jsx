@@ -23,7 +23,7 @@ class Summary extends Component {
     } = this.props;
 
     if(_.isEmpty(products)){
-      return <h1 className="loading">Loading......</h1>;
+      return <h1 className="loading">Loading...</h1>;
     }
 
     return (
@@ -33,7 +33,7 @@ class Summary extends Component {
               <div className="form-title-row">
                   <h1>Welcome to my store</h1>
               </div>
-              <div className="form-row">
+              <div className="form-row products">
                   <label>
                       <span>Product</span>
                       <select defaultValue={selectedProductId} onChange={(e) => updateProduct(e.target.value)}>
@@ -46,7 +46,7 @@ class Summary extends Component {
                       </select>
                   </label>
               </div>
-              <div className="form-row">
+              <div className="form-row quantity">
                   <label>
                       <span>Quantity</span>
                       <select defaultValue={selectedQuantity} onChange={(e) => updateQuantity(parseInt(e.target.value, 10))}>
