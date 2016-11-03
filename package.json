@@ -89,7 +89,8 @@
     "testEnvironment": "node",
     "collectCoverageFrom": [
       "src/redux/**/*.js",
-      "src/util/**/*.js"
+      "src/util/**/*.js",
+      "src/components/**/*.jsx"
     ]
   },
   "babel": {
