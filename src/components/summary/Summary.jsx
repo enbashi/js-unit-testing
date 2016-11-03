@@ -23,7 +23,7 @@ class Summary extends Component {
     } = this.props;
 
     if(_.isEmpty(products)){
-      return <h1 className="loading">Loading...</h1>;
+      return <h1 className="loading">Loading......</h1>;
     }
 
     return (

@@ -1,0 +1,73 @@
+exports[`Summary Component renders Loading when no products are available yet 1`] = `
+<h1
+  className="loading">
+  Loading...
+</h1>
+`;
+
+exports[`Summary Component renders products 1`] = `
+<div
+  className="main-content">
+  <form>
+    <div
+      className="form-title-row">
+      <h1>
+        Welcome to my store
+      </h1>
+    </div>
+    <div
+      className="form-row">
+      <label>
+        <span>
+          Product
+        </span>
+        <select
+          defaultValue={undefined}
+          onChange={[Function]}>
+          <option>
+            Select
+          </option>
+          <option
+            value={111}>
+            X1 Cound DVR - $ 10.00
+          </option>
+          <option
+            value={222}>
+            DTA Additional Outlet - $ 3.99
+          </option>
+        </select>
+      </label>
+    </div>
+    <div
+      className="form-row">
+      <label>
+        <span>
+          Quantity
+        </span>
+        <select
+          defaultValue={undefined}
+          onChange={[Function]}>
+          <option>
+            Select
+          </option>
+          <option>
+            1
+          </option>
+          <option>
+            2
+          </option>
+          <option>
+            3
+          </option>
+          <option>
+            4
+          </option>
+          <option>
+            5
+          </option>
+        </select>
+      </label>
+    </div>
+  </form>
+</div>
+`;
