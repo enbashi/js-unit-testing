@@ -15,7 +15,7 @@ describe('Summary Component', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  
+
   it('renders products', () => {
     const component = renderer.create(
       <Summary
