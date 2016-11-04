@@ -1,2 +1,2 @@
 # js-unit-testing
-Sample project to demonstrate uni testing a React/Redux/Sagas application. 
+Sample project to demonstrate unit testing a React/Redux/Sagas application. 
